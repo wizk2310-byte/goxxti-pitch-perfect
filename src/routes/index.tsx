@@ -199,8 +199,12 @@ function Index() {
                   key={i}
                   className="flex-1 origin-bottom bg-acid/70"
                   style={{
-                    height: `${18 + Math.abs(Math.sin(i * 1.7)) * 82}%`,
-                    animation: `bar ${1 + (i % 7) * 0.18}s ease-in-out ${i * 0.03}s infinite`,
+                    height: `${(18 + Math.abs(Math.sin(i * 1.7)) * 82).toFixed(1)}%`,
+                    animationName: "bar",
+                    animationTimingFunction: "ease-in-out",
+                    animationIterationCount: "infinite",
+                    animationDuration: `${(1 + (i % 7) * 0.18).toFixed(2)}s`,
+                    animationDelay: `${(i * 0.03).toFixed(2)}s`,
                   }}
                 />
               ))}
