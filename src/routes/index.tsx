@@ -98,7 +98,7 @@ function Index() {
       {/* HERO */}
       <section
         id="top"
-        className="grain scanlines relative flex min-h-screen flex-col justify-end overflow-hidden pb-10 pt-28"
+        className="grain scanlines relative flex min-h-screen flex-col justify-center overflow-hidden pb-16 pt-32"
       >
         <div
           className="pointer-events-none absolute inset-0 opacity-40"
